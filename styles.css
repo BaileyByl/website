@@ -20,13 +20,13 @@ a:hover {
 
 button {
   background-color: #35b9c0;
+  border-radius: 10px;
   color: white;
-  padding: 15px 32px;
+  padding: 14px 31px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
   cursor: pointer;
 }
 
