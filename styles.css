@@ -1,17 +1,36 @@
 body {
   background: #161619;
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
   text-align: center;
   margin: 0;
-  padding: 60px;
+  padding: 80px;
 }
 
-.h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
+h1 {
+  color: rgb(255, 255, 255);
+  font-size: 38px;
+  letter-spacing: -1px;
+  font-weight: 700;
+  margin: 30px;
+}
+
+h2 {
+  color: #35b9c0;
+  font-size: 56px;
+  letter-spacing: -1px;
+  font-weight: 700;
+  margin: 30px;
+}
+
+h3 {
   color: #ffffff;
+  font-size: 30px;
+  letter-spacing: -1px;
+  font-weight: 700;
+  margin: 40px;
 }
 
-.a {
+a {
   color: #ffffff;
   text-decoration: none;
 }
@@ -28,6 +47,7 @@ body {
   font-size: 16px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+  margin: 15px;
 }
 
 .glow-button {
@@ -36,5 +56,6 @@ body {
 
 .glow-button:hover {
   color: #000000;
-  box-shadow: 0 5px 15px rgb(53, 185, 192, 0.4);
+  box-shadow: 0 5px 25px rgb(53, 185, 192, 0.3);
 }
+
