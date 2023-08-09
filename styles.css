@@ -21,6 +21,7 @@ a:hover {
 
 button {
   background-color: #35b9c0;
+  border: 0px solid #35b9c0;
   border-radius: 10px;
   color: white;
   padding: 14px 31px;
