@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+   <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <!--HEADER-->
+    <div class="header">
+      <div class="name">Bailey Byl</div>
+      <div class="contact-info">
+        <div class="email">
+          <span class="email-p1">Email:&nbsp;</span><span class="email-p2" onclick="copyToClipboard('me@baileybyl.com')">me@baileybyl.com</span>
+        </div>
+        <div class="phone">Phone: 0473670259</div>
+      </div>
+      <!--Buttons-->
+      <div class="spacer"></div>
+      <div class="header-buttons">
+        <div><a href="https://www.linkedin.com/in/bailey-byl-487a54287/" class="button glow-button" target="_blank">LinkedIn</a></div>
+        <div><a href="https://github.com/BaileyByl" class="button glow-button" target="_blank">Github</a></div>
+        <div><a href="mailto:baileybyl02@gmail.com" class="button glow-button" target="_blank">Email</a></div>
+      </div>
+    </div>
+    
+    <!--MAIN-->
+    <main>
+      
+    </main>
+  </body>
+</html>
+
+<script>
+  function copyToClipboard(text) {
+      navigator.clipboard.writeText(text);
+      var emailElement = document.querySelector('.email-p2');
+      emailElement.classList.add('copied');
+      setTimeout(function() {
+          emailElement.classList.remove('copied');
+      }, 2000);
+  }
+</script>

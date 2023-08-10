@@ -3,7 +3,73 @@ body {
   font-family: 'Inter', sans-serif;
   text-align: center;
   margin: 0;
-  padding: 80px;
+  padding: 0px;
+}
+
+/* HEADER */
+.header {
+  background-color: #101013;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-buttons {
+  display: flex;
+  gap: 10px;
+  margin-right: 30px;
+}
+
+/* FONTS */
+.name {
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.email-p1 {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.712);
+  margin: 0;
+}
+
+.email-p2 {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.712);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.email-p2:hover {
+  color: #35b9c0;
+  text-shadow: 0 5px 25px rgb(53, 185, 192, 0.3);
+  transition: all 0.1s ease-in-out;
+  content: '📋';
+  display: inline;
+}
+
+.email-p2:after {
+  content: '';
+  display: none;
+}
+.email-p2:hover:after {
+  content: '📋';
+  display: inline;
+}
+.email-p2.copied:after {
+  content: '✅';
+  display: inline;
+}
+
+.phone {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.77);
 }
 
 h1 {
@@ -35,6 +101,9 @@ a {
   text-decoration: none;
 }
 
+
+
+/* BUTTONS */
 .button {
   background-color: #35b9c0;
   border: 0px solid #35b9c0;
@@ -46,12 +115,13 @@ a {
   display: inline-block;
   font-size: 16px;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.1s ease-in-out;
   margin: 15px;
 }
 
 .glow-button {
   color: #000000;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.404);
 }
 
 .glow-button:hover {
@@ -59,3 +129,14 @@ a {
   box-shadow: 0 5px 25px rgb(53, 185, 192, 0.3);
 }
 
+/* OTHER */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 30px;
+}
+
+.spacer {
+  flex-grow: 1;
+}
